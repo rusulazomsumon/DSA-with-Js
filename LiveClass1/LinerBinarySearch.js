@@ -45,3 +45,8 @@
 
 // console.log(binarySearch(arr2, target));
 // // ================Code End==============
+
+/*
+Todo: Assignment 1
+Write Your Won article on liner search and binary search on personal blog or notion
+*/
