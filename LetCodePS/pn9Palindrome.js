@@ -29,16 +29,23 @@
 //     -2e31<= x <= 2e31 - 1
 
 // Solution: 
-var x;
 
  function isPalindrome(x){
-    if(x>0){
-        return true;
-    }else{
+    if(x<0){
         return false;
+    }else{
+        // দেওয়া নম্বরটির gNum এ কপি করে রাখি...।। 
+        var gNum = x; 
+        // রিভাইস নম্বর, rNum
+        var rNum = 0;
+        // যতক্ষণ না x ছোট হতে হতে ০ হয়,.........।। 
+        while(x>0){
+            rNum = (rNum*10)+(x%10);
+            x = Math.floor(x/10);
+        }
+        return gNum === rNum;
     }
-    
-};
+}
 
 // output 
-console.log(isPalindrome(212));
+console.log(isPalindrome(124421));
